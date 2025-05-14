@@ -30,7 +30,7 @@ int main() {
     scanf(" %[^\n]", nomeCidade1);
 
     printf("Digite a População da cidade: ");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite a Área: ");
     scanf("%f", &area1);
@@ -64,6 +64,65 @@ int main() {
 
     printf("Digite a quantidade de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
+
+    // Comparações
+    printf("\n=== Comparação de Cartas ===\n");
+
+    printf("População: ");
+    if (populacao1 > populacao2)
+        printf("Carta 1 venceu\n");
+    else if (populacao1 < populacao2)
+        printf("Carta 2 venceu\n");
+    else    
+        printf("Empate\n");
+
+    printf("Área: ");
+    if (area1 > area2)
+        printf("Carta 1 venceu\n");
+    else if (area1 < area2)
+        printf("Carta 2 venceu\n");
+    else    
+        printf("Empate\n");
+
+    printf("PIB: ");
+    if (pib1 > pib2)
+        printf("Carta 1 venceu\n");
+    else if (pib1 > pib2)
+        printf("Carta 2 venceu\n");
+    else
+        printf("Empate\n");
+
+    printf("Pontos Turísticos: ");
+    if (pontosTuristicos1 > pontosTuristicos2)
+        printf("Carta 1 venceu\n");
+    else if (pontosTuristicos1 < pontosTuristicos2)
+        printf("Carta 2 venceu\n");
+    else
+        printf("Empate\n");
+
+        printf("Densidade Populacional (menor vence): ");
+    if (densidade1 > densidade2)
+        printf("Carta 1 venceu\n");
+    else if (densidade1 < densidade2)
+        printf("Carta 2 venceu\n");
+    else
+        printf("Empate\n");
+
+        printf("PIB Per Capita: ");
+    if (pibPerCapita1 > pibPerCapita2)
+        printf("Carta 1 venceu\n");
+    else if (pibPerCapita1 < pibPerCapita2)
+        printf("Carta 2 venceu\n");
+    else
+        printf("Empate\n");
+
+    printf("Super Poder: ");
+    if (superPoder1 > superPoder2)
+        printf("Carta 1 venceu\n");
+    else if (superPoder1 < superPoder2)
+        printf("Carta 2 venceu\n");
+    else
+        printf("Empate\n");
 
     return 0;
 }
